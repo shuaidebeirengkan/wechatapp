@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '点击头像进入',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -17,6 +17,7 @@ Page({
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
+      console.log(getApp())
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true

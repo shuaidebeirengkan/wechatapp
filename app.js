@@ -35,5 +35,22 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  onLaunch: function (options) {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+      }
+    })
+    console.log("app.js ---onLaunch---" + JSON.stringify(options));
+  },
+  onShow:function(){
+    console.log("app.js ---onShow---");
+  },
+  onHide:function(){
+    console.log("app.js ---onHide---");
+  },
+  onError: function (msg){
+    console.log("app.js ---onError---" + msg);
+  },
 })
