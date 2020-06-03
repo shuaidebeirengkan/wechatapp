@@ -37,11 +37,6 @@ App({
     userInfo: null
   },
   onLaunch: function (options) {
-    wx.scanCode({
-      success: (res) => {
-        console.log(res)
-      }
-    })
     console.log("app.js ---onLaunch---" + JSON.stringify(options));
   },
   onShow:function(){

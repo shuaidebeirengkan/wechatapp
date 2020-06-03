@@ -11,9 +11,9 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    wx.switchTab({
+      url:'/pages/logs/logs'
+  })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
