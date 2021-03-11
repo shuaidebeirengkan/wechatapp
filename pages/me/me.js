@@ -1,10 +1,11 @@
+// pages/me/me.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    loading:true
+
   },
 
   /**
@@ -18,9 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.setInitialRenderingCache({
-      loadingHint: '正在加载' // 这一部分数据将被应用于界面上，相当于在初始 data 基础上额外进行一次 setData
-    })
+
   },
 
   /**

@@ -1,14 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/me/me",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "考务系统",
     "navigationBarTextStyle":"black"
   },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color":"#8a8a8a",
+    "selectedColor":"#3390FF",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"static/home.png",
+        "selectedIconPath":"static/homeActivation.png"
+      },
+      {
+        "pagePath":"pages/map/map",
+        "text":"地图",
+        "iconPath":"static/issue.png",
+        "selectedIconPath":"static/issueActivation.png"
+      },
+      {
+        "pagePath":"pages/me/me",
+        "text":"我的",
+        "iconPath":"static/me.png",
+        "selectedIconPath":"static/meActivation.png"
+      }
+    ]	
+   },
+  "resizable": true,
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
